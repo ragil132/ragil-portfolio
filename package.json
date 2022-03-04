@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "author": "Ragillio Aji",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^1.0.5",

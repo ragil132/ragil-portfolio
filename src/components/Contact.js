@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
     return (
-        <footer className="text-center bg-gray-800 text-white" id="contact">
+        <footer className="text-center bg-gray-800 text-white rounded" id="contact">
 
             <div className="text-center bg-gray-800 p-4">
                 <p className="text-white mb-3">Feel free to contact me 👇️</p>
