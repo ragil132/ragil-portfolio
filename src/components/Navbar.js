@@ -5,6 +5,7 @@ export default function Navbar() {
     return (
         <nav className="nav flex flex-wrap items-center justify-between bg-gray-800 rounded md:sticky top p-5 top-0 z-10">
             <div className="flex flex-no-shrink items-center mr-6 py-3 text-white">
+                <img className="fill-current mr-4 w-6" src="logo.png" alt="logo" />
                 <span className="font-semibold text-xl tracking-tight">Ragillio Aji</span>
             </div>
 
