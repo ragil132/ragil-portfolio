@@ -14,8 +14,8 @@ export default function Certifications() {
                 </p>
                 <p className="lg:w-2/3 mx-auto leading-relaxed text-base">More at my <a href="https://www.linkedin.com/in/ragillio-aji-ab110a145/">Linkedin</a></p>
                 <div className="flex flex-wrap m-4">
-                    <div className="p-4 md:w-1/2 w-full">
-                        <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+                    <div className="md:p-4 p-0 md:w-1/2 w-full">
+                        <div className="h-full bg-gray-800 bg-opacity-40 md:p-8 p-0 rounded">
                             <div className="inline-flex items-center">
                                 <img
                                     alt="certification"
@@ -26,8 +26,8 @@ export default function Certifications() {
                         </div>
                     </div>
 
-                    <div className="p-4 md:w-1/2 w-full">
-                        <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+                    <div className="md:p-4 p-0 md:w-1/2 w-full">
+                        <div className="h-full bg-gray-800 bg-opacity-40 md:p-8 p-0 rounded">
                             <div className="inline-flex items-center">
                                 <img
                                     alt="certification"

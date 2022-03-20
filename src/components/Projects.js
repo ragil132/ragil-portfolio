@@ -24,13 +24,13 @@ export default function Projects() {
                             href={project.link}
                             key={project.image}
                             className="sm:w-1/2 w-100 p-4">
-                            <div className="flex relative">
+                            <div className="md:flex md:relative grid grid-cols-1">
                                 <img
                                     alt="gallery"
-                                    className="absolute inset-0 w-full h-full object-cover object-center border-2 border-black rounded"
+                                    className="md:absolute md:inset-0 w-full md:h-full lg:h-full md:object-cover md:object-center border-2 border-black rounded"
                                     src={project.image}
                                 />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                                <div className="px-8 py-10 md:relative md:z-10 lg:relative lg:z-10 w-full border-4 border-gray-800 bg-gray-900 md:opacity-0 lg:opacity-0 opacity-90 hover:opacity-100">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                                         {project.subtitle}
                                     </h2>
