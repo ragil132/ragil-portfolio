@@ -31,6 +31,10 @@ export default function Navbar() {
                     <a href="#contact" className="block md:inline-block py-3 no-underline text-base hover:text-white hover:bg-gray-700 rounded py-1 md:px-3">Contact</a>
                 </li>
 
+                <li className="mr-3">
+                    <a href="https://rverse.vercel.app/" className="block md:inline-block py-3 no-underline text-base hover:text-white hover:bg-gray-700 rounded py-1 md:px-3">Blog</a>
+                </li>
+
             </ul>
         </nav>
     );
