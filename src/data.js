@@ -31,7 +31,7 @@ const projects = [
 ];
 
 const skills = [
-    'NodeJS', 'PHP', 'MySQL', 'PostgreSQL', 'MongoDB', 'ExpressJS', 'HapiJS', 'Laravel'
+    'NodeJS', 'PHP', 'MySQL', 'MS SQL Server', 'Codeigniter', 'React', 'HapiJS', 'Laravel'
 ];
 
 export { projects, skills }
