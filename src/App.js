@@ -11,7 +11,7 @@ import Certifications from "./components/Certifications";
 function App() {
   return (
 
-    <main className="text-gray-400 bg-gray-900 body-font">
+    <main className="dark:text-gray-400 dark:bg-gray-900 body-font">
       <Navbar />
       <About />
       <Projects />

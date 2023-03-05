@@ -26,7 +26,7 @@ export default function Contact() {
             <section id="contact" className="relative">
                 <div className="container px-5 py1 mx-auto text-center">
                     <ChatAltIcon className="w-10 inline-block mb-4" />
-                    <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-0">
+                    <h1 className="sm:text-4xl text-3xl font-medium title-font dark:text-white mb-0">
                         Contact Me
                     </h1>
                 </div>
@@ -43,12 +43,12 @@ export default function Contact() {
                             style={{ filter: "opacity(0.7)" }}
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d991.5721028176937!2d106.85195788909385!3d-6.225652316192429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x618e621f49d5581c!2sCervino%20Village%20Apartment!5e0!3m2!1sen!2sid!4v1675599570427!5m2!1sen!2sid"
                         />
-                        <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md px-5">
+                        <div className="bg-gray-500 dark:bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md px-5">
                             <div className="lg:w-1/2 px-6">
                                 <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                     ADDRESS
                                 </h2>
-                                <p className="mt-1">
+                                <p className="mt-1 text-white">
                                     Tebet Barat <br />
                                     Jakarta Selatan
                                 </p>
@@ -57,13 +57,13 @@ export default function Contact() {
                                 <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                     EMAIL
                                 </h2>
-                                <a className="text-indigo-400 leading-relaxed">
+                                <a className="text-white leading-relaxed">
                                     lioajiragil@gmail.com
                                 </a>
                                 <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                                     PHONE
                                 </h2>
-                                <p className="leading-relaxed">085778040857</p>
+                                <p className="leading-relaxed text-white">085778040857</p>
                             </div>
                         </div>
                     </div>
@@ -77,39 +77,39 @@ export default function Contact() {
 
                         </p>
                         <div className="relative mb-4">
-                            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+                            <label htmlFor="name" className="leading-7 text-sm text-gray-700 dark:text-gray-400">
                                 Name
                             </label>
                             <input
                                 type="text"
                                 id="name"
                                 name="name"
-                                className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                className="w-full bg-gray-100 dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                 onChange={(e) => setName(e.target.value)}
                             />
                         </div>
                         <div className="relative mb-4">
-                            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+                            <label htmlFor="email" className="leading-7 text-sm text-gray-700 dark:text-gray-400">
                                 Email
                             </label>
                             <input
                                 type="email"
                                 id="email"
                                 name="email"
-                                className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                className="w-full bg-gray-100 dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                         </div>
                         <div className="relative mb-4">
                             <label
                                 htmlFor="message"
-                                className="leading-7 text-sm text-gray-400">
+                                className="leading-7 text-sm text-gray-700 dark:text-gray-400">
                                 Message
                             </label>
                             <textarea
                                 id="message"
                                 name="message"
-                                className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                                className="w-full bg-gray-100 dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                                 onChange={(e) => setMessage(e.target.value)}
                             />
                         </div>
@@ -121,11 +121,11 @@ export default function Contact() {
                     </form>
                 </div>
             </section>
-            <footer className="text-center bg-gray-800 text-white rounded">
+            <footer className="text-center bg-gray-200 dark:bg-gray-800 dark:text-white rounded">
 
-                <div className="text-center bg-gray-800 p-4">
-                    <p className="text-white mb-3">Feel free to contact me 👇️</p>
-                    <a href="https://twitter.com/aji_ragillio" type="button" className="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                <div className="text-center bg-gray-200 dark:bg-gray-800 p-4">
+                    <p className="darkk:text-white mb-3">Feel free to contact me 👇️</p>
+                    <a href="https://twitter.com/aji_ragillio" type="button" className="rounded-full border-2 border-gray-500 dark:border-white dark:text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                         <svg aria-hidden="true"
                             focusable="false"
                             data-prefix="fab"
@@ -142,7 +142,7 @@ export default function Contact() {
                         </svg>
                     </a>
 
-                    <a href="https://www.instagram.com/ragiilll11" type="button" className="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                    <a href="https://www.instagram.com/ragiilll11" type="button" className="rounded-full border-2 border-gray-500 dark:border-white dark:text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                         <svg aria-hidden="true"
                             focusable="false"
                             data-prefix="fab"
@@ -159,7 +159,7 @@ export default function Contact() {
                         </svg>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/ragillio-aji-ab110a145/" type="button" className="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                    <a href="https://www.linkedin.com/in/ragillio-aji-ab110a145/" type="button" className="rounded-full border-2 border-gray-500 dark:border-white dark:text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                         <svg aria-hidden="true"
                             focusable="false"
                             data-prefix="fab"
@@ -176,7 +176,7 @@ export default function Contact() {
                         </svg>
                     </a>
 
-                    <a href="https://github.com/ragil132" type="button" className="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                    <a href="https://github.com/ragil132" type="button" className="rounded-full border-2 border-gray-500 dark:border-white dark:text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                         <svg aria-hidden="true"
                             focusable="false"
                             data-prefix="fab"
@@ -192,7 +192,7 @@ export default function Contact() {
                             ></path>
                         </svg>
                     </a>
-                    <a href="mailto:lioajiragil@gmail.com" type="button" className="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                    <a href="mailto:lioajiragil@gmail.com" type="button" className="rounded-full border-2 border-gray-500 dark:border-white dark:text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                         <svg aria-hidden="true"
                             focusable="false"
                             data-prefix="fab"
@@ -208,8 +208,8 @@ export default function Contact() {
                             ></path>
                         </svg>
                     </a>
-                    <p className="text-white">Made with &#10084; by{" "}
-                        Ragillio Aji &copy; 2022</p>
+                    <p className="dark:text-white">Made with &#10084; by{" "}
+                        Ragillio Aji &copy; {new Date().getFullYear()}</p>
                     <p>Special thanks to <a href="https://www.freecodecamp.org/news/author/reed">Reed Barger</a> for the course and <a href="https://limitlessdesigns.io/avatar-illustrations/">Limitless Design</a> for 3D Avatars</p>
                 </div>
             </footer >

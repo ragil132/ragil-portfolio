@@ -6,10 +6,10 @@ export default function About() {
         <section id="about">
             <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="typing title-font w-80 md:w-96 lg:w-96 md:text-3xl text-base my-0 mx-auto md:mx-0 font-medium text-white">
+                    <h1 className="typing title-font w-80 md:w-96 lg:w-96 md:text-3xl text-base my-0 mx-auto md:mx-0 font-medium dark:text-white">
                         Hello folks! My name is Ragillio
                     </h1>
-                    <h1 className="typing title-font w-80 md:w-96 lg:w-96 md:text-3xl text-base my-0 mx-auto md:mx-0 mb-4 font-medium text-white">
+                    <h1 className="typing title-font w-80 md:w-96 lg:w-96 md:text-3xl text-base my-0 mx-auto md:mx-0 mb-4 font-medium dark:text-white">
                         I'm a Software Engineer<span className="ketik">|</span>
                     </h1>
                     <p className="leading-relaxed">
@@ -26,14 +26,14 @@ export default function About() {
                         </a>
                         <a
                             href="#projects"
-                            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                            className="ml-4 inline-flex text-white dark:text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
                             What i've built
                         </a>
                     </div>
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-3/4">
                     <img
-                        className="object-cover object-center rounded-full border-2 border-black"
+                        className="object-cover object-center rounded-full border-2 dark:border-black border-gray"
                         alt="hero"
                         src="./ragil.png"
                     />
