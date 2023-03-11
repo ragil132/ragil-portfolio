@@ -16,7 +16,7 @@ export default function Switcher() {
     return (
         <>
             <DarkModeSwitch
-                className="m-4"
+                className="md:m-4 my-2 mx-0"
                 checked={darkSide}
                 onChange={toggleDarkMode}
                 size={15}

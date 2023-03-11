@@ -5,9 +5,11 @@ import './Navbar.css'
 
 export default function Navbar() {
     return (
-        <nav className="nav flex flex-wrap items-center justify-between bg-gray-200 dark:bg-gray-800 border-b border-gray-200 dark:border-0 rounded md:sticky sm:sticky lg:sticky xl:sticky 2xl:sticky top p-5 top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 dark:bg-opacity-30 firefox:bg-opacity-90">
+        <nav className="nav flex flex-wrap items-center justify-between bg-gray-200 dark:bg-gray-800 border-b border-gray-200 dark:border-0 rounded sticky top p-5 top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 dark:bg-opacity-30 firefox:bg-opacity-90">
             <div className="flex flex-no-shrink items-center mr-6 py-3 dark:text-white">
-                <a className='md:ml-7 ml-5 p-1 border-2 border-black dark:border-white rounded-lg mr-2'><img className="fill-current w-6 dark:invert" src="logo.png" alt="logo" /></a>
+                <a className='md:ml-7 ml-1 p-1 border-2 border-black dark:border-white rounded-lg mr-2'>
+                    <img className="fill-current w-6 dark:invert" src="logo.png" alt="logo" />
+                </a>
                 <span className="font-semibold text-xl tracking-tight">Ragillio Aji</span>
             </div>
 
