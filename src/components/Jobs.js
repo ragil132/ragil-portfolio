@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import { BriefcaseIcon } from "@heroicons/react/solid";
 import React from "react";
 import { jobs } from "../data";
@@ -21,7 +22,7 @@ export default function Jobs() {
                         {jobs.map((job) => (
                             <li key={job.duration} className="flex justify-between gap-x-6 py-5">
                                 <div className="flex gap-x-4">
-                                    <img className="w-20 flex-none p-1 rounded-full border-2 border-gray-500 dark:border-white bg-gray-50" src={job.imageUrl} alt="Jobs Image" />
+                                    <img className="w-20 flex-none p-1 rounded-full border-2 border-gray-500 dark:border-white bg-gray-50" src={job.imageUrl} alt="" />
                                     <div className="min-w-0 flex-auto">
                                         <p className="text-sm font-semibold leading-8 text-gray-900 dark:text-white">{job.name}</p>
                                         <p className="mt-1 truncate text-xs leading-8 text-gray-500">{job.duration}</p>
