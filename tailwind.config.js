@@ -6,7 +6,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        '99': '29rem',
+      }
+    },
   },
   plugins: [
     plugin(function ({ addVariant, e, postcss }) {

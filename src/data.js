@@ -34,4 +34,15 @@ const skills = [
     'NodeJS', 'PHP', 'MySQL', 'MS SQL Server', 'Codeigniter', 'React', 'HapiJS', 'Laravel'
 ];
 
-export { projects, skills }
+const jobs = [
+    {
+        name: 'Panin Dubai Syariah Bank',
+        duration: 'April 2022-Now',
+        role: 'IT Developer EUC Officer',
+        imageUrl: './pdsb.jpg',
+        isCurrent: true,
+        lastSeenDateTime: '2023-01-23T13:23Z'
+    }
+]
+
+export { projects, skills, jobs }

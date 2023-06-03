@@ -6,17 +6,17 @@ export default function About() {
         <section id="about">
             <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="typing title-font w-80 md:w-96 lg:w-96 md:text-3xl text-base my-0 mx-auto md:mx-0 font-medium dark:text-white">
+                    <h1 className="typing title-font w-80 md:w-99 lg:w-99 md:text-3xl text-base md:text-2xl my-0 mx-auto md:mx-0 font-medium dark:text-white">
                         Hello folks! My name is Ragillio
                     </h1>
-                    <h1 className="typing title-font w-80 md:w-96 lg:w-96 md:text-3xl text-base my-0 mx-auto md:mx-0 mb-4 font-medium dark:text-white">
+                    <h1 className="typing title-font w-80 md:w-99 lg:w-99 md:text-3xl text-base md:text-2xl my-0 mx-auto md:mx-0 mb-4 font-medium dark:text-white">
                         I'm a Software Engineer<span className="ketik">|</span>
                     </h1>
                     <p className="leading-relaxed">
-                        Simple Boy. Gamer by Day, Coder by Night.
+                        With lines of code as my artistic ink,
                     </p>
                     <p className="mb-8 leading-relaxed">
-                        Peace and love, x.
+                        Let's create unimaginable things.
                     </p>
                     <div className="flex justify-center">
                         <a

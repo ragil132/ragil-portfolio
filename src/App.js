@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Certifications from "./components/Certifications";
+import Jobs from './components/Jobs';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <main className="dark:text-gray-400 dark:bg-gray-900 body-font">
       <Navbar />
       <About />
+      <Jobs />
       <Projects />
       <Skills />
       <Certifications />
