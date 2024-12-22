@@ -42,6 +42,8 @@ const skills = [
   "React",
   "Golang",
   "Laravel",
+  "Docker",
+  "Definitely anything you want",
 ];
 
 const jobs = [

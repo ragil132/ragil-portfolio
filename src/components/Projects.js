@@ -15,9 +15,8 @@ export default function Projects() {
             Apps I've Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            I built this after what i've learnt from various online course (like{" "}
-            <a href="https://www.dicoding.com">Dicoding</a>) and college
-            definitely (not much)
+            I built this after what i've learnt from various online course and
+            my fulltime job
           </p>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             More at my <a href="https://github.com/ragil132">Github</a>
