@@ -38,7 +38,7 @@ const skills = [
   "PHP",
   "All SQL Based Database",
   "Python",
-  "Codeigniter",
+  "Basic Banking Business",
   "React",
   "Golang",
   "Laravel",
