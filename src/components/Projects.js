@@ -15,8 +15,8 @@ export default function Projects() {
             Apps I've Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            I built this after what i've learnt from various online course and
-            my fulltime job
+            I built this after what I've learned from various online courses and
+            my full-time job
           </p>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             More at my <a href="https://github.com/ragil132">Github</a>
@@ -32,7 +32,7 @@ export default function Projects() {
               <div className="flex-none w-full lg:h-80 md:relative grid grid-cols-1">
                 <img
                   alt="gallery"
-                  className="object-fill md:absolute md:inset-0 w-full md:h-full lg:h-full md:object-cover md:object-center border-2 border-gray dark:border-black rounded"
+                  className="object-contain md:absolute md:inset-0 w-full md:h-full lg:h-full md:object-contain md:object-center border-2 border-gray dark:border-black rounded"
                   src={project.image}
                 />
                 <div className="px-8 py-10 md:relative md:z-10 lg:relative lg:z-10 w-full border-4 border-gray dark:border-gray-800 bg-gray-100 backdrop-filter backdrop-blur-lg bg-opacity-30 dark:bg-opacity-30 firefox:bg-opacity-90 dark:bg-gray-900 md:opacity-0 lg:opacity-0 opacity-90 hover:opacity-100">
