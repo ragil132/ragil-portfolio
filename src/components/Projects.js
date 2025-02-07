@@ -41,12 +41,10 @@ export default function Projects() {
                 <h2 className="text-sm font-medium text-green-400">
                   {project.subtitle}
                 </h2>
-                <h1 className="text-lg font-medium dark:text-white">
+                <h1 className="text-lg font-medium text-white">
                   {project.title}
                 </h1>
-                <p className="text-sm dark:text-gray-300">
-                  {project.description}
-                </p>
+                <p className="text-sm text-gray-300">{project.description}</p>
               </div>
             </a>
           ))}
