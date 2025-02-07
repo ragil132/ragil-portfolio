@@ -15,39 +15,33 @@ export default function Certifications() {
         </p>
         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
           More at my{" "}
-          <a href="https://www.linkedin.com/in/ragillio-aji-ab110a145/">
+          <a
+            href="https://www.linkedin.com/in/ragillio-aji-ab110a145/"
+            className="text-green-400"
+          >
             Linkedin
           </a>
         </p>
-        <div className="flex flex-wrap m-4">
-          <div className="md:p-4 p-0 md:w-1/2 w-full">
-            <div className="h-full bg-gray-500 dark:bg-gray-800 bg-opacity-40 md:p-8 p-0 rounded">
-              <div className="inline-flex items-center">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.credly.com/badges/122b3471-897c-48a5-928d-969ab44a80b9/public_url"
-                >
-                  <img
-                    alt="certification"
-                    src="./WebDevelopmentFundamentals_Badge20241222-23-mmhdad.png"
-                    className="inset-0 w-full h-full object-cover object-center border-2 border-black rounded"
-                  />
-                </a>
-              </div>
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+          <div className="bg-gray-500 dark:bg-gray-800 bg-opacity-40 p-4 rounded flex justify-center items-center">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.credly.com/badges/122b3471-897c-48a5-928d-969ab44a80b9/public_url"
+            >
+              <img
+                alt="certification"
+                src="./WebDevelopmentFundamentals_Badge20241222-23-mmhdad.png"
+                className="w-full h-60 sm:h-80 lg:h-96 object-cover border-2 border-black rounded"
+              />
+            </a>
           </div>
-
-          <div className="md:p-4 p-0 md:w-1/2 w-full">
-            <div className="h-full bg-gray-500 dark:bg-gray-800 bg-opacity-40 md:p-8 p-0 rounded">
-              <div className="inline-flex items-center">
-                <img
-                  alt="certification"
-                  src="./backend.jpg"
-                  className="inset-0 w-full h-full object-cover object-center border-2 border-black rounded"
-                />
-              </div>
-            </div>
+          <div className="bg-gray-500 dark:bg-gray-800 bg-opacity-40 p-4 rounded flex justify-center items-center">
+            <img
+              alt="certification"
+              src="./backend.jpg"
+              className="w-full h-60 sm:h-80 lg:h-96 object-cover border-2 border-black rounded"
+            />
           </div>
         </div>
       </div>

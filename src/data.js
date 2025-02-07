@@ -12,7 +12,7 @@ const projects = [
     subtitle: "Laravel + MySQL",
     description:
       "Built with Laravel 7 (frontend & backend) and MySQL/MariaDB. This project is a part of my final test for achieving my Bachelor's Degree at University.",
-    image: "./laravel_proj.gif",
+    image: "./villa.png",
     link: "#",
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     subtitle: "React, FastAPI, MongoDB",
     description:
       "Built with React, FastAPI, MongoDB. A Website that for generating short url for free",
-    image: "./shortly.jpeg",
+    image: "./shortly.png",
     link: "https://shortly-fe.vercel.app",
   },
   {
