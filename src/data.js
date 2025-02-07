@@ -1,11 +1,11 @@
 const projects = [
   {
-    title: "Yournotes App",
-    subtitle: "MERN Stack",
+    title: "AdCare",
+    subtitle: "Simple Adblocker",
     description:
-      "Built with M.E.R.N. stack (Mongo DB, Express js, React, Node js). YourNotes is a React App. In this app you can add, edit, and delete notes (ordinary CRUD app). There also has an authentication and authorization method.",
-    image: "./react_proj.gif",
-    link: "https://github.com/ragil132/yournotes-fe",
+      "Blocks common ads when you surf the internet. Available in Chrome-based browser and Firefox.",
+    image: "./adcare.png",
+    link: "https://chromewebstore.google.com/detail/adcare/aoiaeicdjljkecaeggnbhlgdbiodidem",
   },
   {
     title: "Villa Reservation System for Griya Asri",
