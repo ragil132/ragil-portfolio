@@ -30,6 +30,8 @@ export default function Projects() {
             <a
               href={project.link}
               key={project.image}
+              target="_blank"
+              rel={"noreferrer"}
               className="relative group overflow-hidden rounded-lg border border-gray-300 dark:border-gray-800"
             >
               <img
