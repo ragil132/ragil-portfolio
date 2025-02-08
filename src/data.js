@@ -21,7 +21,7 @@ const projects = [
     description:
       "Built with React, FastAPI, MongoDB. A Website that for generating short url for free",
     image: "./shortly.png",
-    link: "https://shortly-fe.vercel.app",
+    link: "https://shortly.ink",
   },
   {
     title: "Internal E-meterai Application",
