@@ -45,7 +45,7 @@ export default function Contact() {
               marginHeight={0}
               marginWidth={0}
               style={{ filter: "opacity(0.7)" }}
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d991.5721028176937!2d106.85195788909385!3d-6.225652316192429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x618e621f49d5581c!2sCervino%20Village%20Apartment!5e0!3m2!1sen!2sid!4v1675599570427!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.908082407514!2d106.84869695!3d-6.233776550000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3968d6f356d%3A0xc8618adbf938591f!2sWest%20Tebet%2C%20Tebet%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1739454235615!5m2!1sen!2sid"
             />
             <div className="bg-gray-500 dark:bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md px-5">
               <div className="lg:w-1/2 px-6">

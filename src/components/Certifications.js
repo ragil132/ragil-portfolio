@@ -36,11 +36,11 @@ export default function Certifications() {
               />
             </a>
           </div>
-          <div className="bg-gray-500 dark:bg-gray-800 bg-opacity-40 p-4 rounded flex justify-center items-center">
+          <div className="bg-gray-500 dark:bg-gray-800 bg-opacity-40 p-4 rounded overflow-y-scroll lg:max-h-98 xl:max-h-98 max-h-64 w-full">
             <img
               alt="certification"
-              src="./backend.jpg"
-              className="w-full h-60 sm:h-80 lg:h-96 object-cover border-2 border-black rounded"
+              src="./bsmr.jpg"
+              className="w-full object-contain border-2 border-black rounded"
             />
           </div>
         </div>
