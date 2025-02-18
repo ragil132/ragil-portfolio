@@ -28,7 +28,7 @@ export default function About() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://drive.google.com/file/d/1cERG1pXIdnbiwSO3Ey_j_QLY4evGqxmu/view?usp=share_link"
+              href="https://drive.google.com/file/d/1U1Xg8nZUO8npg1hcg7FtdcvVGxxJmS-V/view?usp=sharing"
               className="ml-4 inline-flex text-white dark:text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
             >
               CV
