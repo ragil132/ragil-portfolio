@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=1024, user-scalable=no"> -->
+    <title>XP Style Desktop</title>
+    <link rel="stylesheet" href="/assets/css/xp.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+    <div id="boot-screen">
+        <img src="/assets/media/win_xp.gif" alt="Windows XP Booting" class="booting-gif" />
+    </div>
+
+    <div id="fake-cursor"></div>
+
+    <!-- Desktop Icons -->
+    <div style="position: absolute; top: 10px; left: 10px; display: grid; gap: 20px;">
+        <div class="icon" onclick="toggleWindow('cvWindow')">
+            <img src="/assets/img/comp.png" alt="CV" />
+            <div>My CV</div>
+        </div>
+
+        <div class="icon" onclick="toggleWindow('galleryWindow')">
+            <img src="/assets/img/cert.png" alt="Gallery" />
+            <div>Certification</div>
+        </div>
+
+        <div class="icon" onclick="toggleWindow('adcare')">
+            <img src="/assets/img/adcare.png" alt="Adcare" />
+            <div>Adcare</div>
+        </div>
+
+        <div class="icon" onclick="toggleWindow('shortly')">
+            <img src="/assets/img/shortly.png" alt="Shortly" />
+            <div>Shortly</div>
+        </div>
+
+        <div class="icon" onclick="toggleWindow('aboutWindow')">
+            <img src="/assets/img/about2.png" alt="About" />
+            <div>About</div>
+        </div>
+    </div>
+
+    <!-- Windows -->
+    <div id="cvWindow" class="window resizable draggable">
+        <div class="title-bar">
+            <div class="title-bar-text">My CV</div>
+            <div class="title-bar-controls">
+                <button onclick="minimizeWindow('cvWindow')" aria-label="Minimize"></button>
+                <button onclick="resizeWindow('cvWindow')" aria-label="Maximize"></button>
+                <button onclick="closeWindow('cvWindow')" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+
+            <!-- <iframe id="desktopFrame" src="/assets/doc/CV.pdf" style="width: 100%; height: 93%;"
+                title="My CV PDF"></iframe> -->
+            <iframe id="mobileFrame" src="https://drive.google.com/file/d/1U1Xg8nZUO8npg1hcg7FtdcvVGxxJmS-V/preview"
+                style="width: 100%; height: 93%;" title="My CV PDF"></iframe>
+        </div>
+    </div>
+
+    <div id="galleryWindow" class="window resizable draggable">
+        <div class="title-bar">
+            <div class="title-bar-text">Certification</div>
+            <div class="title-bar-controls">
+                <button onclick="minimizeWindow('galleryWindow')" aria-label="Minimize"></button>
+                <button onclick="resizeWindow('galleryWindow')" aria-label="Maximize"></button>
+                <button onclick="closeWindow('galleryWindow')" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <menu role="tablist">
+                <button aria-selected="true" aria-controls="ibm" class="tab-button">IBM</button>
+                <button aria-controls="cisco" class="tab-button">Cisco</button>
+                <button aria-controls="hackerrank" class="tab-button">Hackerrank</button>
+                <button aria-controls="uoh" class="tab-button">University of Helsinki</button>
+                <button aria-controls="lspks" class="tab-button">LSPKS</button>
+                <button aria-controls="dicoding" class="tab-button">Dicoding</button>
+            </menu>
+
+            <article class="tabpanel" role="tabpanel" id="ibm">
+                <ul class="tree-view">
+                    <li>
+                        <details>
+                            <summary class="summary">Issuer</summary>
+                            <ul>
+                                <li class="summary">IBM</li>
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="summary">Issued</summary>
+                            <ul>
+                                <li class="summary">Oct 2024</li>
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="summary">Link</summary>
+                            <ul>
+                                <li class="summary"><a target="_blank"
+                                        href="https://www.credly.com/badges/122b3471-897c-48a5-928d-969ab44a80b9/linked_in_profile">https://www.credly.com/badges/122b3471-897c-48a5-928d-969ab44a80b9/linked_in_profile</a>
+                                </li>
+
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+                <img src="/assets/img/ibm.png" alt="ibm" class="cert-img" />
+            </article>
+
+            <article class="tabpanel" role="tabpanel" hidden id="cisco">
+                <ul class="tree-view">
+                    <li>
+                        <details>
+                            <summary class="summary">Issuer</summary>
+                            <ul>
+                                <li class="summary">Cisco</li>
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="summary">Issued</summary>
+                            <ul>
+                                <li class="summary">Feb 2025</li>
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="summary">Link</summary>
+                            <ul>
+                                <li class="summary"><a target="_blank"
+                                        href="https://www.credly.com/badges/9bd1915a-d36f-497b-bffa-02435eb487a4/public_url">https://www.credly.com/badges/9bd1915a-d36f-497b-bffa-02435eb487a4/public_url</a>
+                                </li>
+
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+                <img src="/assets/img/cisco.png" alt="cisco" class="cert-img" />
+
+            </article>
+
+            <article class="tabpanel" role="tabpanel" hidden id="hackerrank">
+                <ul class="tree-view">
+                    <li>
+                        <details>
+                            <summary class="summary">Issuer</summary>
+                            <ul>
+                                <li class="summary">Hackerrank</li>
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="summary">Issued</summary>
+                            <ul>
+                                <li class="summary">Apr 2025</li>
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="summary">Link</summary>
+                            <ul>
+                                <li class="summary"><a target="_blank"
+                                        href="https://www.hackerrank.com/certificates/e48152a59d17">https://www.hackerrank.com/certificates/e48152a59d17</a>
+                                </li>
+
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+                <img src="/assets/img/hackerrank.png" alt="hackerrank" class="cert-img" />
+
+            </article>
+
+            <article class="tabpanel" role="tabpanel" hidden id="uoh">
+                <ul class="tree-view">
+                    <li>
+                        <details>
+                            <summary class="summary">Issuer</summary>
+                            <ul>
+                                <li class="summary">University of Helsinki</li>
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="summary">Issued</summary>
+                            <ul>
+                                <li class="summary">Mar 2025</li>
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="summary">Link</summary>
+                            <ul>
+                                <li class="summary">
+                                    <a target="_blank"
+                                        href="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/dd92ed9d392252f2acb1b6c98307e6b5">https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/dd92ed9d392252f2acb1b6c98307e6b5</a>
+                                </li>
+
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+                <img src="/assets/img/uoh.png" alt="uoh" class="cert-img" />
+
+            </article>
+
+            <article class="tabpanel" role="tabpanel" hidden id="lspks">
+                <ul class="tree-view">
+                    <li>
+                        <details>
+                            <summary class="summary">Issuer</summary>
+                            <ul>
+                                <li class="summary">Lembaga Sertifikasi Profesi Keuangan Syariah</li>
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="summary">Issued</summary>
+                            <ul>
+                                <li class="summary">Feb 2024</li>
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="summary">Link</summary>
+                            <ul>
+                                <li class="summary">
+                                    <a target="_blank"
+                                        href="https://drive.google.com/file/d/1NgyT8stzrOULdgyD4_kChWC8K7COQXbn/view?usp=share_link">https://drive.google.com/file/d/1NgyT8stzrOULdgyD4_kChWC8K7COQXbn/view?usp=share_link</a>
+                                </li>
+
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+                <img src="/assets/img/lspks.jpg" alt="lspks" class="cert-img2" />
+
+            </article>
+
+            <article class="tabpanel" role="tabpanel" hidden id="dicoding">
+                <ul class="tree-view">
+                    <li>
+                        <details>
+                            <summary class="summary">Issuer</summary>
+                            <ul>
+                                <li class="summary">Dicoding</li>
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="summary">Issued</summary>
+                            <ul>
+                                <li class="summary">Sep 2021</li>
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary class="summary">Link</summary>
+                            <ul>
+                                <li class="summary"><a target="_blank"
+                                        href="https://www.dicoding.com/certificates/07Z654W9MXQR">https://www.dicoding.com/certificates/07Z654W9MXQR</a>
+                                </li>
+
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+                <img src="/assets/img/dicoding.jpg" alt="dicoding" class="cert-img" />
+
+            </article>
+
+        </div>
+        <div class="status-bar">
+            <p class="status-bar-field">Press F1 for help</p>
+            <p class="status-bar-field"><a target="_blank" href="https://www.linkedin.com/in/ragillio-aji">Another in
+                    my Linkedin</a></p>
+            <p class="status-bar-field">CPU Usage: 104%</p>
+        </div>
+    </div>
+
+    <div id="aboutWindow" class="window resizable draggable">
+        <div class="title-bar">
+            <div class="title-bar-text">About</div>
+            <div class="title-bar-controls">
+                <button onclick="minimizeWindow('aboutWindow')" aria-label="Minimize"></button>
+                <button onclick="resizeWindow('aboutWindow')" aria-label="Maximize"></button>
+                <button onclick="closeWindow('aboutWindow')" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <img src="/assets/img/winxp.png" alt="Windows XP Logo" class="logo">
+
+            <div class="version-info">
+                Microsoft® Windows®<br>
+                Version 5.1 (Build 2600.xpsp_sp3_gdr.101209-1647 : Service Pack 3)<br>
+                © 1985-2001 Microsoft Corp.
+            </div>
+
+            <div class="registered">
+                Registered to:<br>
+                Ragillio Aji<br>
+                Umbrella Corporation<br>
+                Product ID: 76487-640-1457236-23924
+            </div>
+
+            <button class="ok-button" onclick="document.getElementById('aboutWindow').style.display='none'">
+                OK
+            </button>
+        </div>
+    </div>
+
+    <div id="internetWindow" class="window resizable draggable">
+        <div class="title-bar">
+            <div class="title-bar-text">Internet</div>
+            <div class="title-bar-controls">
+                <button onclick="minimizeWindow('internetWindow')" aria-label="Minimize"></button>
+                <button onclick="resizeWindow('internetWindow')" aria-label="Maximize"></button>
+                <button onclick="closeWindow('internetWindow')" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <iframe class="internet-window" src="https://web.archive.org/web/20110202090047/http://www.google.com/"
+                width="100%" height="100%" style="border: none;"></iframe>
+        </div>
+    </div>
+
+    <div id="shortly" class="window resizable draggable">
+        <div class="title-bar">
+            <div class="title-bar-text">Shortly</div>
+            <div class="title-bar-controls">
+                <button onclick="minimizeWindow('shortly')" aria-label="Minimize"></button>
+                <button onclick="resizeWindow('shortly')" aria-label="Maximize"></button>
+                <button onclick="closeWindow('shortly')" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="iframe-toolbar"
+                style="padding: 6px; background: #c0dfff; display: flex; justify-content: space-between; align-items: center;">
+                <span>Viewing in window</span>
+                <button onclick="window.open('https://shortly.ink', '_blank')"
+                    style="padding: 4px 8px; font-size: 0.9em;">
+                    Open Original
+                </button>
+            </div>
+            <h4>
+                A Website that for generating short url for free. Built with React, FastAPI, MongoDB.
+            </h4>
+            <iframe class="internet-window" src="https://shortly.ink" width="100%" height="100%"
+                style="border: none;"></iframe>
+        </div>
+    </div>
+
+    <div id="adcare" class="window resizable draggable">
+        <div class="title-bar">
+            <div class="title-bar-text">Adcare</div>
+            <div class="title-bar-controls">
+                <button onclick="minimizeWindow('adcare')" aria-label="Minimize"></button>
+                <button onclick="resizeWindow('adcare')" aria-label="Maximize"></button>
+                <button onclick="closeWindow('adcare')" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="iframe-toolbar"
+                style="padding: 6px; background: #c0dfff; display: flex; justify-content: space-between; align-items: center;">
+                <span>Viewing screenshot</span>
+                <button
+                    onclick="window.open('https://chromewebstore.google.com/detail/adcare/aoiaeicdjljkecaeggnbhlgdbiodidem', '_blank')"
+                    style="padding: 4px 8px; font-size: 0.9em;">
+                    Open Original
+                </button>
+            </div>
+            <h4>A simple adblocker that blocks common ads when you surf the internet. Available in Chrome-based browser
+                and Firefox.</h4>
+            <img src="/assets/img/adcare-view.png" alt="Windows XP Logo" class="adcare-img">
+        </div>
+    </div>
+
+    <div id="wmp" class="window resizable draggable">
+        <div class="title-bar">
+            <div class="title-bar-text">Windows Media Player</div>
+            <div class="title-bar-controls">
+                <button onclick="minimizeWindow('wmp')" aria-label="Minimize"></button>
+                <button onclick="resizeWindow('wmp')" aria-label="Maximize"></button>
+                <button onclick="closeWindow('wmp')" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <video class="video-window" controls width="100%" style="border-radius: 6px;">
+                <source src="/assets/media/dear-god.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div id="emailwindow" class="window resizable draggable">
+        <div class="title-bar">
+            <div class="title-bar-text">E-mail</div>
+            <div class="title-bar-controls">
+                <button onclick="minimizeWindow('emailwindow')" aria-label="Minimize"></button>
+                <button onclick="resizeWindow('emailwindow')" aria-label="Maximize"></button>
+                <button onclick="closeWindow('emailwindow')" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <iframe class="internet-window" src="https://web.archive.org/web/20111129004157/http://www.yahoo.com/"
+                width="100%" height="100%" style="border: none;"></iframe>
+        </div>
+    </div>
+
+    <!-- Start Menu -->
+    <div id="startMenu" class="start-menu">
+        <div class="start-menu-left">Administrator
+
+            </br>
+            </br>
+            <div class="start-item" onclick="toggleWindow('internetWindow'); toggleStartMenu()">
+                <img src="/assets/img/internet.png" alt="Internet Icon" class="start-icon" />
+                Internet
+            </div>
+            <div class="start-item" onclick="toggleWindow('emailwindow'); toggleStartMenu()">
+                <img src="/assets/img/email.png" alt="Email Icon" class="start-icon" />
+                E-mail
+            </div>
+            <div class="start-item" onclick="toggleWindow('wmp'); toggleStartMenu()">
+                <img src="/assets/img/wmp.png" alt="wnp Icon" class="start-icon" />
+                Windows Media Player
+            </div>
+            <div class="start-item bottom-start" onclick="shutdownXP()">
+                <img src="/assets/img/turnoff.png" alt="Shutdown Icon" class="start-icon" />
+                Turn Off Computer...
+            </div>
+        </div>
+        <div class="start-menu-right">
+            <div class="start-item" onclick="toggleWindow('cvWindow'); toggleStartMenu()">
+                <img src="/assets/img/comp.png" alt="CV Icon" class="start-icon" />
+                My CV
+            </div>
+            <div class="start-item" onclick="toggleWindow('galleryWindow'); toggleStartMenu()">
+                <img src="/assets/img/cert.png" alt="Gallery Icon" class="start-icon" />
+                Certification
+            </div>
+            <div class="start-item" onclick="toggleWindow('aboutWindow'); toggleStartMenu()">
+                <img src="/assets/img/about2.png" alt="About Icon" class="start-icon" />
+                About
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Taskbar -->
+    <div class="taskbar">
+        <button class="xp-button" onclick="toggleStartMenu()">
+            <img src="/assets/img/winxp.png" style="width: 16px; vertical-align: middle; margin-right: 4px;" />
+            Start
+        </button>
+        <div class="taskbar-buttons" id="taskbarButtons"></div>
+        <div class="xp-clock" id="xp-clock">12:00 PM</div>
+    </div>
+
+    <div id="shutdown-screen" style="display: none;"></div>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

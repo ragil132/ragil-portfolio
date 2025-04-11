@@ -1,6 +1,6 @@
 {
     "css.lint.unknownAtRules": "ignore",
     "[css]": {
-        "editor.defaultFormatter": "bradlc.vscode-tailwindcss"
+        "editor.defaultFormatter": "vscode.css-language-features"
     }
 }
