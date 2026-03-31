@@ -47,12 +47,26 @@ function minimizeWindow(id) {
 function resizeWindow(id) {
     const win = document.getElementById(id);
     if (win.classList.contains('fullscreen')) {
-        win.style.width = '300px';
-        win.style.height = '300px';
-        win.style.top = '100px';
-        win.style.left = '200px';
+        const saved = win._savedRect;
+        if (saved) {
+            win.style.width = saved.width;
+            win.style.height = saved.height;
+            win.style.top = saved.top;
+            win.style.left = saved.left;
+        } else {
+            win.style.width = '300px';
+            win.style.height = '300px';
+            win.style.top = '100px';
+            win.style.left = '200px';
+        }
         win.classList.remove('fullscreen');
     } else {
+        win._savedRect = {
+            width: win.style.width || win.offsetWidth + 'px',
+            height: win.style.height || win.offsetHeight + 'px',
+            top: win.style.top || win.offsetTop + 'px',
+            left: win.style.left || win.offsetLeft + 'px',
+        };
         win.style.top = '0';
         win.style.left = '0';
         win.style.width = '100vw';
